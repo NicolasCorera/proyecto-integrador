@@ -7,6 +7,8 @@ _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN
  * 2
  * 3
  * 4
+ * 5 Ezequiel Gimenez
+ * 6
 
 ## Licencia 📄
 
