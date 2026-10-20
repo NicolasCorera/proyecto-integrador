@@ -3,10 +3,11 @@
 _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN_
 
 # Colaboradores
- * 1
- * 2
- * 3
- * 4
+
+- 1
+- 2 Carlos Pedeflous
+- 3
+- 4
 
 ## Licencia 📄
 
