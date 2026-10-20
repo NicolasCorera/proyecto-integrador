@@ -12,4 +12,4 @@ _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia GNU GPL v3 - mira el archivo [LICENSE.md](LICENSE.md) para detalles
