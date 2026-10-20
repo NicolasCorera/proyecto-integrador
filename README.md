@@ -4,7 +4,7 @@ _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN
 
 # Colaboradores
 
-- 1
+- 1 Tamara 
 - 2 Carlos Pedeflous
 - 3 Daniela 
 - 4 Ezequiel Gimenez
