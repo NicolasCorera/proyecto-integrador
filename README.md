@@ -6,7 +6,7 @@ _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN
 
 - 1 Patricio Gamarra
 - 2 Carlos Pedeflous
-- 3 Daniela 
+- 3 Daniela Maracara
 - 4 Ezequiel Gimenez
 - 5 Tamara Rodas
 
