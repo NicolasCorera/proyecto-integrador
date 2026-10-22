@@ -9,6 +9,7 @@ _Proyecto integrador de la Diplomatura en Programación Web Full Stack de la UTN
 - 3 Daniela Maracara
 - 4 Ezequiel Gimenez
 - 5 Tamara Rodas
+- 6 Nicolás Corera
 
 ## Licencia 📄
 
