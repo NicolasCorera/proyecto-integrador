@@ -1,0 +1,55 @@
+
+/* ==============================
+   1. VARIABLES GLOBALES
+   ============================== */
+
+:root {
+  --color-bg: #0b0b0b;
+  --color-card: #121212;
+  --color-border: #262626;
+
+  --color-text: #ffffff;
+  --color-text-muted: #a3a3a3;
+
+  --color-gold: #e5c583;
+  --color-gold-dark: #d4af37;
+
+  --font-title: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+
+/* ==============================
+   2. RESET BÁSICO
+   ============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
