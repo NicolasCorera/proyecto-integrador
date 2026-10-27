@@ -60,6 +60,7 @@
           <h3 class="product__title">Elegance</h3>
           <p class="product__description">EAU de parfum</p>
           <span class="product__price"> $ 120.000 </span>
+          <br></br>
           <button class="btn btn__secondary">Add to cart</button>
         </div>
         <div class="product__card">
@@ -67,6 +68,7 @@
           <h3 class="product__title">Velour</h3>
           <p class="product__description">EAU de parfum</p>
           <span class="product__price"> $ 120.000 </span>
+          <br></br>
           <button class="btn btn__secondary">Add to cart</button>
         </div>
         <div class="product__card">
@@ -74,6 +76,7 @@
           <h3 class="product__title">Divine</h3>
           <p class="product__description">EAU de parfum</p>
           <span class="product__price"> $ 120.000 </span>
+          <br></br>
           <button class="btn btn__secondary">Add to cart</button>
         </div>
       </div>
@@ -106,17 +109,6 @@
         </button>
       </div>
     </section>
-    <!-- seccion about aroma  -->
-    <section id="about-aroma">
-      <div id="imagen-de-banner">
-        <img src="/assets/img/banner_2.webp" alt="perfume en flores" />
-      </div>
-      <div>
-        <p>about aroma</p>
-        <h2>More Than a Fragance, Its an Experience</h2>
-        <div id="Learn-More-button">
-          <button>Learn More</button>
-        </div>
       </div>
     </section>
     <section id="caracteristicas">
@@ -160,15 +152,18 @@
     </section>
     <section id="suscribe-box">
       <div id="text-box-newsletter">
-        <p>Stat in touch</p>
+        <p id="tittle-box">Stat in touch</p>
         <h2>Join Our Newsletter</h2>
-        <p>
+        <p id="parrafo">
           Be the first to know about new arrivals, exclusive offers and special
           events.
         </p>
       </div>
-      <div id="suscribe-box">
-        <!-- no se como hacer esta parte, literalmente se me borro del cerebro perdon -->
+      <div id="form">
+       <form action="/buscar" id="formulario">
+        <input type="text" id="buscardor" placeholder="Your mail adress">
+        <button type="submit" id="boton">Subscribe</button>
+       </form>
       </div>
     </section>
     <footer>
@@ -176,11 +171,13 @@
         <div id="tittle">
           <h2>Aroma</h2>
         </div>
-        <div id="utile-buttons">
-          <a href="#">home</a>
-          <a href="#">shop</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+        <div id="items">
+          <ul id="utile-buttons">
+            <li class="list__item">Home</li>
+            <li class="list__item">Shop</li>
+            <li class="list__item">Abaut</li>
+            <li class="list__item">Contact</li>
+          </ul>
         </div>
         <div id="contact-buttons">
           <a href=""><img src="" alt="" /></a>
@@ -189,7 +186,7 @@
         </div>
       </div>
       <div id="copirigth">
-        <p>2026 Aroma all rigths reserved.</p>
+        <p>&copy 2026 Aroma all rigths reserved.</p>
       </div>
     </footer>
   </body>
