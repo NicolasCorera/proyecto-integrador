@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <section class="section hero">
+    <section class="section hero" id="home">
       <div class="hero__bg">
         <img src="/assets/img/hero.webp" alt="Hero Background" width="600" />
       </div>
@@ -19,10 +19,11 @@
         <h2 class="header__title">AROMA</h2>
         <nav class="navbar">
           <ul class="navbar__list">
-            <li class="list__item">Item1</li>
-            <li class="list__item">Item2</li>
-            <li class="list__item">Item3</li>
-            <li class="list__item">Item4</li>
+            <li class="list__item"><a href="#home">Home</a></li>
+            <li class="list__item"><a href="#sop">Shop</a></li>
+            <li class="list__item"><a href="#about">About</a></li>
+            <li class="list__item"><a href="#gallery">Gallery</a></li>
+            <li class="list__item"><a href="#contact">Contact</a></li>
           </ul>
           <div class="navbar__actions">
             <div class="ic-sm">
@@ -48,7 +49,7 @@
       </div>
     </section>
 
-    <section class="section products__carousell">
+    <section class="section products__carousell" id="shop">
       <div class="title__section">
         <span class="tag__section"> our collection </span>
         <h2 class="title__products">Luxury Fragrances</h2>
@@ -89,7 +90,7 @@
       
     </section>
 
-    <section class="section about__us">
+    <section class="section about__us" id="about">
       <div class="last_img"><img src="/assets/img/banner.webp" alt="About Us" width="500" /></div>
       
       <div class="content__about__us">
@@ -133,6 +134,32 @@
         <p>We stand behind every fragrance</p>
       </div>
     </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-christopher-welsch-leveroni-2150186467-31771395.webp" alt="Imagen 1">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-fashionneedles-32630385.webp" alt="Imagen 2">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-laurachouette-21008941.webp" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-liana-horodetska-5077625-7524968.webp" alt="Imagen 4">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-madalina-enache-1540051428-27357173.webp" alt="Imagen 5">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-manish-jain-1176829519-29255493.webp" alt="Imagen 6">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-rangerzang-14402564.webp" alt="Imagen 7">
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/img/pexels-raqeebkhan-13827110.webp" alt="Imagen 8">
+      </div>
+    </section>
     <section id="Opinions">
       <div id="text-box">
         <p>what our customers say</p>
@@ -149,6 +176,64 @@
           <span class="material-symbols-outlined ic-md"> star </span>
         </div>
       </div>
+    </section>
+        <section class="contacto" id="contact">
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="1122334455" pattern="[0-9]{8,15}" required>
+        </div>
+
+        <div class="campo">
+          <label for="motivo">Motivo de contacto</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Seleccioná una opción</option>
+            <option value="consulta">Consulta general</option>
+            <option value="presupuesto">Solicitar presupuesto</option>
+            <option value="soporte">Soporte</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <fieldset class="campo">
+          <legend>¿Cómo preferís que te contactemos?</legend>
+          <label>
+            <input type="radio" name="contacto" value="email" checked> Email
+          </label>
+          <label>
+            <input type="radio" name="contacto" value="telefono"> Teléfono
+          </label>
+          <label>
+            <input type="radio" name="contacto" value="whatsapp"> WhatsApp
+          </label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+        </div>
+
+        <div class="campo">
+          <label>
+            <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+          </label>
+        </div>
+
+        <div class="botones">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
     </section>
     <section id="suscribe-box">
       <div id="text-box-newsletter">
@@ -173,10 +258,11 @@
         </div>
         <div id="items">
           <ul id="utile-buttons">
-            <li class="list__item">Home</li>
-            <li class="list__item">Shop</li>
-            <li class="list__item">Abaut</li>
-            <li class="list__item">Contact</li>
+            <li class="list__item"><a href="#home">Home</a></li>
+            <li class="list__item"><a href="#sop">Shop</a></li>
+            <li class="list__item"><a href="#about">About</a></li>
+            <li class="list__item"><a href="#gallery">Gallery</a></li>
+            <li class="list__item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div id="contact-buttons">
