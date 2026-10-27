@@ -451,8 +451,6 @@ input {
   gap: 16px;          
   padding: 16px;
 }
-
-
 #gallery > div {
 
   width: calc(25% - 12px); 
