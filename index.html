@@ -3,24 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AROMA - Exclusive collection of luxury fragrances."
+    />
     <title>Perfumería - Landing Page | UTN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/hero.webp"
+      fetchpriority="high"
+    />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios,arrow_forward,arrow_forward_ios,search,shopping_bag,menu,star&display=block"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <section class="section hero" id="home">
       <div class="hero__bg">
-        <img src="/assets/img/hero.webp" alt="Hero Background" width="600" />
+        <img
+          src="assets/img/hero.webp"
+          alt="Hero Background"
+          fetchpriority="high"
+          decoding="async"
+        />
       </div>
       <header class="header">
         <h2 class="header__title">AROMA</h2>
+        <div class="menu__hamburger"><span class="material-symbols-outlined"> menu </span></div>
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="list__item"><a href="#home">Home</a></li>
-            <li class="list__item"><a href="#sop">Shop</a></li>
+            <li class="list__item"><a href="#shop">Shop</a></li>
             <li class="list__item"><a href="#about">About</a></li>
             <li class="list__item"><a href="#gallery">Gallery</a></li>
             <li class="list__item"><a href="#contact">Contact</a></li>
@@ -49,213 +68,336 @@
       </div>
     </section>
 
-    <section class="section products__c0arousell" id="shop">
-      <div class="title__section">
-        <span class="tag__section"> our collection </span>
-        <h2 class="title__products">Luxury Fragrances</h2>
-      </div>
-      <div class="products__carousell">
-        <div class="products__">
-        <div class="product__card">
-          <img src="/assets/img/product_1.webp" alt="Elegance" width="200" />
-          <h3 class="product__title">Elegance</h3>
-          <p class="product__description">EAU de parfum</p>
-          <span class="product__price"> $ 120.000 </span>
-          <br></br>
-          <button class="btn btn__secondary">Add to cart</button>
-        </div>
-        <div class="product__card">
-          <img src="/assets/img/product_2.webp" alt="Elegance" width="200" />
-          <h3 class="product__title">Velour</h3>
-          <p class="product__description">EAU de parfum</p>
-          <span class="product__price"> $ 120.000 </span>
-          <br></br>
-          <button class="btn btn__secondary">Add to cart</button>
-        </div>
-        <div class="product__card">
-          <img src="/assets/img/product_3.webp" alt="Elegance" width="200" />
-          <h3 class="product__title">Divine</h3>
-          <p class="product__description">EAU de parfum</p>
-          <span class="product__price"> $ 120.000 </span>
-          <br></br>
-          <button class="btn btn__secondary">Add to cart</button>
-        </div>
-      </div>
-      <div class="carousell__navs">
-        <span class="material-symbols-outlined"> arrow_back_ios </span>
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    <main class="main">
+      <div class="container">
+        <section class="section products__c0arousell" id="shop">
+          <div class="title__section">
+            <span class="tag__section"> our collection </span>
+            <h2 class="title__products">Luxury Fragrances</h2>
+          </div>
+          <div class="products__carousell">
+            <div class="products__">
+              <div class="product__card">
+                <img
+                  src="assets/img/product_1.webp"
+                  alt="Elegance"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 class="product__title">Elegance</h3>
+                <p class="product__description">EAU de parfum</p>
+                <span class="product__price"> $ 120.000 </span>
+                <button class="btn btn__secondary">Add to cart</button>
+              </div>
+              <div class="product__card">
+                <img
+                  src="assets/img/product_2.webp"
+                  alt="Velour"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 class="product__title">Velour</h3>
+                <p class="product__description">EAU de parfum</p>
+                <span class="product__price"> $ 120.000 </span>
+                <button class="btn btn__secondary">Add to cart</button>
+              </div>
+              <div class="product__card">
+                <img
+                  src="assets/img/product_3.webp"
+                  alt="Divine"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 class="product__title">Divine</h3>
+                <p class="product__description">EAU de parfum</p>
+                <span class="product__price"> $ 120.000 </span>
+                <button class="btn btn__secondary">Add to cart</button>
+              </div>
+            </div>
+            <div class="carousell__navs">
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </div>
+          </div>
+        </section>
       </div>
 
-      </div>
-      
-    </section>
-
-    <section class="section about__us" id="about">
-      <div class="last_img"><img src="/assets/img/banner.webp" alt="About Us" width="500" /></div>
-      
-      <div class="content__about__us">
-        <span class="tag__about__us">About aroma</span>
-        <h3 class="title__about__us">
-          More Than a Fragance, It's an Experience
-        </h3>
-        <p class="description__about__us">
-          At AROMA, we belive that a frangrance is more than just a scent - it's
-          a feeling, a memory, a part of who you are. Our exclusive collection
-          is crafted with the finest ingredients to bring out your unique
-          essence.
-        </p>
-        <button class="btn btn__secondary">
-          Learn more
-          <span class="material-symbols-outlined"> arrow_forward </span>
-        </button>
-      </div>
-    </section>
-      </div>
-    </section>
-
-    <section id="caracteristicas">
-      <div id="premium-ingredients">
-        <img src="/assets/img/leaf-svgrepo-com.svg" alt="Premium Ingredients" />
-        <h2>premium ingredients</h2>
-        <p>Only the finest natural ingredients</p>
-      </div>
-      <div id="exclusive-collection">
-        <img src="/assets/img/diamond-svgrepo-com.svg" alt="Exclusive Collection" />
-        <h2>exclusive collection</h2>
-        <p>unique scents for every personality</p>
-      </div>
-      <div id="fast-and-secure-shopping">
-        <img src="/assets/img/transport-svgrepo-com.svg" alt="Fast and Secure Shopping" />
-        <h2>fast and secure shopping</h2>
-        <p>Your order arrives safely and on time.</p>
-      </div>
-      <div id="satisfaction-guaranteed">
-        <img src="/assets/img/shield-check-svgrepo-com.svg" alt="Satisfaction Guaranteed" />
-        <h2>satisfaction guaranteed</h2>
-        <p>We stand behind every fragrance</p>
-      </div>
-    </section>
-      <div class="gallery_section">
-      <span class="tag__section"> section </span>
-      <h2 class="title__products">Gallery</h2>
-      </div>
-    <section class="gallery" id="gallery">
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-christopher-welsch-leveroni-2150186467-31771395.webp" alt="Imagen 1">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-fashionneedles-32630385.webp" alt="Imagen 2">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-laurachouette-21008941.webp" alt="Imagen 3">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-liana-horodetska-5077625-7524968.webp" alt="Imagen 4">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-madalina-enache-1540051428-27357173.webp" alt="Imagen 5">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-manish-jain-1176829519-29255493.webp" alt="Imagen 6">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-rangerzang-14402564.webp" alt="Imagen 7">
-      </div>
-      <div class="gallery-item">
-        <img src="/assets/img/pexels-raqeebkhan-13827110.webp" alt="Imagen 8">
-      </div>
-    </section>
-    <section id="Opinions">
-      <div id="text-box">
-        <p>what our customers say</p>
-        <h2>Real Stories. True Essence.</h2>
-        <p>
-          "Aroma has completely changed the way I see perfumes.<br />
-          The quality, the packaging, and the scent... everything is perfect."
-        </p>
-        <div id="stars-box">
-          <span class="material-symbols-outlined ic-md"> star </span>
-          <span class="material-symbols-outlined ic-md"> star </span>
-          <span class="material-symbols-outlined ic-md"> star </span>
-          <span class="material-symbols-outlined ic-md"> star </span>
-          <span class="material-symbols-outlined ic-md"> star </span>
+      <section class="section about__us" id="about">
+        <div class="last_img">
+          <img
+            src="assets/img/banner.webp"
+            alt="About Us"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
+
+        <div class="content__about__us">
+          <span class="tag__about__us">About aroma</span>
+          <h3 class="title__about__us">
+            More Than a Fragance, It's an Experience
+          </h3>
+          <p class="description__about__us">
+            At AROMA, we belive that a frangrance is more than just a scent -
+            it's a feeling, a memory, a part of who you are. Our exclusive
+            collection is crafted with the finest ingredients to bring out your
+            unique essence.
+          </p>
+          <button class="btn btn__secondary">
+            Learn more
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </button>
+        </div>
+      </section>
+
+      <div class="container">
+        <section id="caracteristicas">
+          <div id="premium-ingredients">
+            <img
+              src="assets/img/leaf-svgrepo-com.svg"
+              alt="Premium Ingredients"
+              loading="lazy"
+              decoding="async"
+            />
+            <h2>premium ingredients</h2>
+            <p>Only the finest natural ingredients</p>
+          </div>
+          <div id="exclusive-collection">
+            <img
+              src="assets/img/diamond-svgrepo-com.svg"
+              alt="Exclusive Collection"
+              loading="lazy"
+              decoding="async"
+            />
+            <h2>exclusive collection</h2>
+            <p>unique scents for every personality</p>
+          </div>
+          <div id="fast-and-secure-shopping">
+            <img
+              src="assets/img/transport-svgrepo-com.svg"
+              alt="Fast and Secure Shopping"
+              loading="lazy"
+              decoding="async"
+            />
+            <h2>fast and secure shopping</h2>
+            <p>Your order arrives safely and on time.</p>
+          </div>
+          <div id="satisfaction-guaranteed">
+            <img
+              src="assets/img/shield-check-svgrepo-com.svg"
+              alt="Satisfaction Guaranteed"
+              loading="lazy"
+              decoding="async"
+            />
+            <h2>satisfaction guaranteed</h2>
+            <p>We stand behind every fragrance</p>
+          </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+          <div class="title__section">
+            <span class="tag__section"> our moments </span>
+            <h2 class="title__products">Gallery</h2>
+          </div>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-christopher-welsch-leveroni-2150186467-31771395.webp"
+                alt="Imagen 1"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-fashionneedles-32630385.webp"
+                alt="Imagen 2"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-laurachouette-21008941.webp"
+                alt="Imagen 3"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-liana-horodetska-5077625-7524968.webp"
+                alt="Imagen 4"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-madalina-enache-1540051428-27357173.webp"
+                alt="Imagen 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-manish-jain-1176829519-29255493.webp"
+                alt="Imagen 6"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-rangerzang-14402564.webp"
+                alt="Imagen 7"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/pexels-raqeebkhan-13827110.webp"
+                alt="Imagen 8"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+
+      <section id="Opinions">
+        <div id="text-box">
+          <p>what our customers say</p>
+          <h2>Real Stories. True Essence.</h2>
+          <p>
+            "Aroma has completely changed the way I see perfumes.<br />
+            The quality, the packaging, and the scent... everything is perfect."
+          </p>
+          <div id="stars-box">
+            <span class="material-symbols-outlined ic-md"> star </span>
+            <span class="material-symbols-outlined ic-md"> star </span>
+            <span class="material-symbols-outlined ic-md"> star </span>
+            <span class="material-symbols-outlined ic-md"> star </span>
+            <span class="material-symbols-outlined ic-md"> star </span>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
         <section class="contacto" id="contact">
-      <form action="#" method="post">
-        <div class="campo">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-        </div>
+          <div class="title__section">
+            <span class="tag__section"> get in touch </span>
+            <h2 class="title__products">Contacto</h2>
+          </div>
+          <form action="#" method="post">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
 
-        <div class="campo">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
-        </div>
+            <div class="campo">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tuemail@ejemplo.com"
+                required
+              />
+            </div>
 
-        <div class="campo">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="1122334455" pattern="[0-9]{8,15}" required>
-        </div>
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="1122334455"
+                pattern="[0-9]{8,15}"
+                required
+              />
+            </div>
 
-        <div class="campo">
-          <label for="motivo">Motivo de contacto</label>
-          <select id="motivo" name="motivo" required>
-            <option value="">Seleccioná una opción</option>
-            <option value="consulta">Consulta general</option>
-            <option value="presupuesto">Solicitar presupuesto</option>
-            <option value="soporte">Soporte</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
+            <div class="campo">
+              <label for="motivo">Motivo de contacto</label>
+              <select id="motivo" name="motivo" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="consulta">Consulta general</option>
+                <option value="presupuesto">Solicitar presupuesto</option>
+                <option value="soporte">Soporte</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
 
-        <fieldset class="campo">
-          <legend>¿Cómo preferís que te contactemos?</legend>
-          <label>
-            <input type="radio" name="contacto" value="email" checked> Email
-          </label>
-          <label>
-            <input type="radio" name="contacto" value="telefono"> Teléfono
-          </label>
-          <label>
-            <input type="radio" name="contacto" value="whatsapp"> WhatsApp
-          </label>
-        </fieldset>
+            <fieldset class="campo">
+              <legend>¿Cómo preferís que te contactemos?</legend>
+              <label class="opcion">
+                <input type="radio" name="contacto" value="email" checked />
+                Email
+              </label>
+              <label class="opcion">
+                <input type="radio" name="contacto" value="telefono" />
+                Teléfono
+              </label>
+              <label class="opcion">
+                <input type="radio" name="contacto" value="whatsapp" />
+                WhatsApp
+              </label>
+            </fieldset>
 
-        <div class="campo">
-          <label for="comentarios">Comentarios</label>
-          <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
-        </div>
+            <div class="campo">
+              <label for="comentarios">Comentarios</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="5"
+                placeholder="Escribí tu mensaje..."
+                required
+              ></textarea>
+            </div>
 
-        <div class="campo">
-          <label>
-            <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
-          </label>
-        </div>
+            <div class="campo">
+              <label class="opcion">
+                <input type="checkbox" name="terminos" required />
+                Acepto los términos y condiciones
+              </label>
+            </div>
 
-        <div class="botones">
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpiar</button>
-        </div>
-      </form>
-    </section>
-    <section id="suscribe-box">
-      <div id="text-box-newsletter">
-        <p id="tittle-box">Stat in touch</p>
-        <h2>Join Our Newsletter</h2>
-        <p id="parrafo">
-          Be the first to know about new arrivals, exclusive offers and special
-          events.
-        </p>
+            <div class="botones">
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpiar</button>
+            </div>
+          </form>
+        </section>
       </div>
-      <div id="form">
-       <form action="/buscar" id="formulario">
-        <input type="text" id="buscardor" placeholder="Your mail adress">
-        <button type="submit" id="boton">Subscribe</button>
-       </form>
-      </div>
-    </section>
+
+      <section id="suscribe-box">
+        <div id="text-box-newsletter">
+          <p id="tittle-box">Stat in touch</p>
+          <h2>Join Our Newsletter</h2>
+          <p id="parrafo">
+            Be the first to know about new arrivals, exclusive offers and
+            special events.
+          </p>
+        </div>
+        <div id="form">
+          <form action="" id="formulario">
+            <input type="email" id="buscardor" placeholder="Your mail adress" />
+            <button type="submit" class="btn btn__primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div id="fotter-tittle-buttons">
         <div id="tittle">
@@ -264,20 +406,38 @@
         <div id="items">
           <ul id="utile-buttons">
             <li class="list__item"><a href="#home">Home</a></li>
-            <li class="list__item"><a href="#sop">Shop</a></li>
+            <li class="list__item"><a href="#shop">Shop</a></li>
             <li class="list__item"><a href="#about">About</a></li>
             <li class="list__item"><a href="#gallery">Gallery</a></li>
             <li class="list__item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div id="contact-buttons">
-          <a href="" id="img1"><img src="\assets\img\instagram-167-svgrepo-com.svg" alt="" /></a>
-          <a href="" id="img2"><img src="\assets\img\facebook-svgrepo-com.svg" alt="" /></a>
-          <a href="" id="img3"><img src="\assets\img\pinterest-svgrepo-com.svg" alt="" /></a>
+          <a href="#" id="img1"
+            ><img
+              src="assets/img/instagram-167-svgrepo-com.svg"
+              alt="Instagram"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="#" id="img2"
+            ><img
+              src="assets/img/facebook-svgrepo-com.svg"
+              alt="Facebook"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="#" id="img3"
+            ><img
+              src="assets/img/pinterest-svgrepo-com.svg"
+              alt="Pinterest"
+              loading="lazy"
+              decoding="async"
+          /></a>
         </div>
       </div>
       <div id="copirigth">
-        <p>&copy 2026 Aroma all rigths reserved.</p>
+        <p>&copy; 2026 Aroma all rigths reserved.</p>
       </div>
     </footer>
   </body>
